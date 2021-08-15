@@ -19,4 +19,4 @@ pool = mp.Pool(mp.cpu_count())
 results = [pool.apply(get_commons, args=(l1, l2)) for (l1, l2) in
            zip(list_a, list_b)]
 pool.close()
-print results[:10]
+print(results[:10])
