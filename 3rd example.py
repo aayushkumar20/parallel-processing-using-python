@@ -18,4 +18,4 @@ def normalize(mylist):
 pool = mp.Pool(mp.cpu_count())
 results = [pool.apply(normalize, args=(l1, )) for l1 in list_a]
 pool.close()
-print results[:10]
+print(results[:10])
